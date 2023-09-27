@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*head */
+.head1 {
+    font-size:40px;
+    color:#ffffff;
+    
+}
+.head2 {    
+    font-size:17px;
+    margin-left:10px;
+    margin-bottom:15px;
+}
+/*logo*/
+.logo{
+    margin-top: 10px;
+    max-width: 100px;
+    
+}
+body {
+    min-height: 100hv;
+    background: url(fondo1.jpg);/*esta es la imagen*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+
+.menu {
+    font-family: 'Poppins', sans-serif;
+    position:sticky;
+    background-color: #FF010C ;/*color de header*/
+    padding:0px 0px 20px 13px;
+    color:rgb(255, 255, 255);
+    margin: 0 auto;
+    overflow: hidden ;
+    z-index:10;
+}
+.menu a {
+    justify-content: center;
+    margin-top: 20px;
+    float:right;
+    margin-right: 30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-log {
+    right: auto;
+    float: right;
+    justify-content: center;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+footer {
+    width: 100%;
+    bottom: 0px;
+    background-color: #ffffff;
+    color: #ffffff;
+    align-self: flex-end;
+    padding-top:20px;
+    padding-bottom:50px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+.body_sec {
+    margin-left:20px;
+}
+
+
+.ov-btn-slide-left { 
+color: #111; /* color de fuente */
+padding: 16px 20px;
+border-radius: 80px; /* redondear bordes */
+position: relative;
+z-index: 1;
+overflow: hidden;
+display: inline-block;
+margin-left: 100px;
+
+list-style: none;
+display: inline-block;
+    display: block;
+    padding: 15px 20px;
+    color: #111;
+}
+.ov-btn-slide-left:hover {
+color: #111; /* color de fuente hover */
+}
+  .ov-btn-slide-left::after {
+  content: "";
+  background: #ffffff; /* color de fondo hover */
+  position:absolute;
+  z-index: -1;
+  padding: 15px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  border-radius: 80px; 
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  visibility: visible;
+  }
+    .ov-btn-slide-left:hover::after {
+     border-radius: 80px; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+   -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    transition: all .2s;
+  
+     }
+
+     .ani {
+animation-duration: 3s;
+animation-name: slidein;
+animation-iteration-count: no-repeat;
+}
+.zoom {
+transition: transform .2s; 
+}
+
+.zoom:hover {
+transform: scale(1.5); 
+}
+.margen{
+margin: 150px;
+position: absolute;
+}
+.margen1{
+margin: 500px;
+margin-top: 300px;
+position: absolute;    
+}
+.cssFont_1 {
+font-family: Comic Sans MS;
+font-size: 21px;
+letter-spacing: 1px;
+word-spacing: 1px;
+color: #111;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+#btnside{
+    font-size: 9px;
+    margin-top: -10;
+    text-align: left;
+    
+    
+}
+
+
+header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35rem;
+    width:  100%;
+    position: relative;
+    
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+}
+
+.contenido-header {
+    position: absolute ;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: left;
+    margin-top: 6rem;
+    margin-left: 250px;
+    font-size: 4rem;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: left;
+    margin-left: 250px;
+    font-size: 2rem;
+}
+.logo2{
+    margin-top: -370px;
+    margin-left: 1000px;
+}
+.logo3{
+    margin-top: 40px;
+    margin-left: 160px;
+}
+.logo4{
+    margin-top: 40px;
+    margin-left: 590px;
+}
+.logo5{
+    margin-top: 40px;
+    margin-left: 490px;
+}
+.mapa{
+    margin-top:-600px;
+    margin-left: 1060px;
+}
+.mapa1{
+    margin-left: 400px;
+}
+.vision{
+    margin-left: 200px; 
+}
+.mision{
+    margin-top:-60px;
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;
+    text-align: left;
+  }
+  
+  #sidebar.active {
+    left: 0px;
+    text-align: left;
+  }
+  
+  #sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    text-align: left;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; 
+    text-align: left;
+  }
+  
+  #sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  #sidebar .toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: left;
+    font-size: 30px;
+    border: 3px solid white;
+  }
+
+
+
+
+
+
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: red;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: red;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+    color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}       
+        
+
+        
